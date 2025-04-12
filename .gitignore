@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# VSCode configuration
+.vscode/
+
+# Package-lock files (uncomment if you want to ignore)
+# package-lock.json 

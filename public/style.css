@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Todo App Styles */
+.Homecontainer{
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.todo-app {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-section select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-list {
+    list-style: none;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.todo-list li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item {
+    transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+    background-color: #f0f0f0;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todo-text {
+    flex: 1;
+    word-break: break-word;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.complete-btn, .delete-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.complete-btn:hover {
+    background-color: #e6f7e6;
+}
+
+.delete-btn:hover {
+    background-color: #fee6e6;
+}
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    padding: 15px;
+    font-style: italic;
+}
+
+/* Auth Page Styles */
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-box #message{
+    text-align: center;
+    margin: 10px 0;
+    color: #d72222;
+    font-weight: 500;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+.submit-btn {
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #1557b0;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.form-footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Category Styles */
+.category-filter {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.category-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.category-btn.active {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.category-badge {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.add-category-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+.add-category-section input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+} 
