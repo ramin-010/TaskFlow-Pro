@@ -1,4 +1,4 @@
-# TaskFlow Pro
+# TaskSync Pro
 
 A sophisticated task management platform with secure user authentication, real-time updates, and a clean, modern UI.
 
@@ -60,7 +60,7 @@ PORT=3000
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd taskflow-pro
+   cd TaskSync-pro
    ```
 
 2. Install dependencies:
